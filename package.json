@@ -1,0 +1,28 @@
+{
+  "name": "leyton",
+  "version": "0.0.0",
+  "description": "Command line node documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pekim/leyton.git"
+  },
+  "keywords": [
+    "command",
+    "terminal",
+    "node",
+    "nodejs",
+    "docs",
+    "documentation"
+  ],
+  "author": "Mike D Pilsbury",
+  "license": "MIT",
+  "dependencies": {
+    "keypress": "0.0.2",
+    "charm": "0.1.0",
+    "async": "~0.1.22"
+  }
+}
