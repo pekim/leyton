@@ -3,7 +3,7 @@ var charm = require('charm')(process);
 var gitRepo = require('./lib/git-repo');
 var ProgressAnimation = require('./lib/progress-animation');
 
-//charm.reset();
+charm.reset();
 
 charm.write('initialising ');
 charm.on('^C', process.exit);
@@ -15,7 +15,9 @@ charm.position(function(x, y) {
   gitRepo.update(function gitUpdateComplete(err) {
     progressAnimation.stop();
 
-    console.log(err);
+    if (err) {
+      console.log(err);
+    }
     process.exit();
   });
 });

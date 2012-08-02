@@ -23,6 +23,10 @@
   "dependencies": {
     "keypress": "0.0.2",
     "charm": "0.1.0",
-    "async": "~0.1.22"
+    "async": "0.1.22",
+    "marked": "0.2.5",
+    "temp": "0.4.0",
+    "github": "0.1.4",
+    "request": "2.10.0"
   }
 }
