@@ -21,13 +21,13 @@
   "author": "Mike D Pilsbury",
   "license": "MIT",
   "dependencies": {
-    "keypress": "0.0.2",
-    "charm": "0.1.0",
     "async": "0.1.22",
+    "charm": "0.1.0",
+    "keypress": "0.0.2",
     "marked": "0.2.5",
-    "temp": "0.4.0",
     "request": "2.10.0",
     "semver": "1.0.14",
-    "tar": "~0.1.13"
+    "tar": "~0.1.13",
+    "temp": "0.4.0"
   }
 }
