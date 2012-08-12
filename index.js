@@ -7,12 +7,15 @@ var downloadedDocs = require('./lib/downloaded-docs');
 // var status = require('./lib/status');
 
 downloadedDocs.latestStableVersion(function(err, version) {
-  console.log(version.name);
+  console.log(err, version.name);
+  downloadedDocs.version(version, function(err, docs) {
+    console.log(err, docs);
+    process.exit();
+  });
 
   // charm.reset();
   // charm.on('^C', process.exit);
 
-  process.exit();
 });
 
 // if (!status.availableDownloadsUpdatedRecently(60 * 1000)) {
