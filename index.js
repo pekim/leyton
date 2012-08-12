@@ -6,10 +6,8 @@ var downloadedDocs = require('./lib/downloaded-docs');
 // var ProgressAnimation = require('./lib/progress-animation');
 // var status = require('./lib/status');
 
-downloadedDocs.availableVersions(function(err, availableVersions) {
-  console.log(availableVersions.map(function (version) {
-    return version.name;
-  }));
+downloadedDocs.latestStableVersion(function(err, version) {
+  console.log(version.name);
 
   // charm.reset();
   // charm.on('^C', process.exit);
