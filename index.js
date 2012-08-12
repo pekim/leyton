@@ -9,7 +9,10 @@ var downloadedDocs = require('./lib/downloaded-docs');
 downloadedDocs.latestStableVersion(function(err, version) {
   console.log(err, version.name);
   downloadedDocs.version(version, function(err, docs) {
-    console.log(err, docs);
+    console.log(err, Object.keys(docs).length);
+    console.log(err, Object.keys(docs));
+    console.log(docs.index);
+
     process.exit();
   });
 
