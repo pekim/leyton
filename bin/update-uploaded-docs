@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var update = require('../lib/github/uploaded-docs').update;
+
+update(function(err, versionTags){
+  if (err) {
+    console.log('Oops!', err);
+  }
+});
